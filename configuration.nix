@@ -58,7 +58,7 @@
   # Configure console keymap
   console.keyMap = "br-abnt2";
 
-  #Enable zram
+  # Enable zram
   zramSwap.enable = true;
 
   # Enable CUPS to print documents.
@@ -101,7 +101,7 @@
       spotify
       prismlauncher
   
-  #RetroArch Cores
+  # RetroArch Cores
       (retroarch.override {
         cores = with libretro; [
           genesis-plus-gx
@@ -123,11 +123,11 @@
     ];
   };
 
-  #Virtualisation
+  # Virtualisation
   virtualisation.libvirtd.enable = true;
   programs.dconf.enable = true; # virt-manager requires dconf to remember settings
 
-  #Steam
+  # Steam
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
@@ -135,7 +135,7 @@
   };
   hardware.opengl.driSupport32Bit = true; # Enables support for 32bit libs that steam uses
   
-  #Minecraft
+  # Minecraft
 
   nixpkgs.overlays = [
     (final: prev: {
